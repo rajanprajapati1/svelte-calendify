@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.ec {
+    --ec-primary-color: theme("colors.blue.600");
+    --ec-today-color: theme("colors.blue.100");
+    --ec-border-color: theme("colors.gray.200");
+    --ec-event-text-color: white;
+    font-family: theme("fontFamily.sans");
+  }
+  
+  .ec-header {
+    background-color: white;
+    border-bottom: 1px solid var(--ec-border-color);
+  }
+  
+  .ec-event {
+    border-radius: theme("borderRadius.md");
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
