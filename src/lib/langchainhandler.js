@@ -3,7 +3,7 @@ import { google } from "googleapis";
 import { addEvent, deleteEvent, getEvents, updateEvent } from "./googleapis.js";
 import { ActionFetcher } from "./ActionFetcher.js";
 
-export async function handleCalendarAction(event) {
+ async function handleCalendarAction(event) {
   const session = await event.locals.getSession();
   if (!session || !session.user) {
     return json({ error: "Not authenticated" }, { status: 401 });
