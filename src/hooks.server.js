@@ -30,6 +30,7 @@ export const { handle } = SvelteKitAuth({
   session: {
     strategy: "jwt", 
   },
+  trustHost: true, // Add this to trust localhost during dev/preview
   callbacks: {
     async jwt({ token, account }) {
       if (account) {
